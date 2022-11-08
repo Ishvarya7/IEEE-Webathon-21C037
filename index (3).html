@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload='document.form1.text1.focus()'>
+      <h1 class="title">Welcome! </h1>
+      <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">
+            Login Form
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <label for="login" class="slide signup"> Login</label>
+            <input type="radio" name="slide" id="signup">
+            <label for="signup" class="slide signup"> Sign Up</label>
+            <div class="slide-tab"></div>
+          </div>
+          <div class="form-inner">
+          <form action="#" class="login">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+          <div class="btn">
+            <div class="btn-layer">
+            <input type="submit" value="Login" onclick="ValidateEmail(document.form1.text1)">
+            </div>
+          </div>
+          <div class="signup-link">
+            Not a member?<a href="">SignUp now</a>
+          </div>
+          </form>
+          <form action="#" class="signup">
+          <div class="field">
+            <input type="text" placeholder="Email Address"  required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="btn">
+            <div class="btn-layer">
+            <input type="submit" value="signup" onclick="ValidateEmail(document.form1.text1)">
+            </div>
+          </div>
+          </form>
+        </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+      const Logintext= document.query 
+      selector(".title-text.login");
+      const Loginform= document.query 
+      selector("form.login");
+      const Loginbtn=document.query
+      selector("label.login");
+      const signupbtn=document.query 
+      selector ("label.signup"); 
+      const signupLink=document.query
+      selector("Form.signup-link a");
+      signupbtn.onclick=(()=>{Loginform.style.marginLeft="-50%";
+      Logintext.style.marginLeft="-50%";}); 
+      Loginbtn.onclick=(()=>{Loginform.style.marginleft="0%";
+      Logintext.style.marginLeft="0%";});
+      signupLink.onclick=(()=>{signupbtn.click();return false;})
+      </script>
+  </body>
+</html>
